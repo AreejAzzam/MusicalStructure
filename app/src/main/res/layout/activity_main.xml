@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructure.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/p"></ImageView>
+
+        <TextView
+            android:id="@+id/tracksTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/SongsTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text=" Artist"
+            android:textAlignment="gravity"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/SongsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="30dp"
+
+            android:text=" All Songs"
+            android:textAlignment="gravity"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
